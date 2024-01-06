@@ -9,13 +9,13 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgba(199, 198, 198, 0.779);
         }
 
         header {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color:rgb(4, 4, 43);
             color: white;
         }
 
@@ -28,14 +28,30 @@
         }
 
         section {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.84);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.05);
         }
 
         .projects {
             grid-column: span 2;
+        }
+
+        .skills li:hover {
+            color: #190c16;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+        .contact p:hover {
+            color: #190c16;
+            background-color: #e0e0e0;
+            cursor: pointer;
         }
 
         @media (max-width: 768px) {
@@ -43,13 +59,25 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color:rgba(4, 4, 43, 0.625);
+            color: white;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Ushodaya</h1>
-        <p>Web Developer</p>
+       <center><table >
+            <tr>
+                <td><img src="profile.png" height="100" width="100"></td>
+                <td><font size="5"><b>KAGITHA USHODAYA</b></font><br><font size="3"> Web Developer</font></td>
+            </tr>
+        </table></center> 
+    
     </header>
 
     <div class="container">
@@ -57,7 +85,7 @@
             <h2>Projects</h2>
             <p><strong>Project 1:</strong> Responsive Portfolio Page - Developed a responsive portfolio page using HTML, CSS, and CSS Grid.</p>
             <p><strong>Project 2:</strong> To-Do List App - Created a simple to-do list application with JavaScript and styled it with CSS.</p>
-            <!-- Add more projects as needed -->
+            <p><strong>Project 3:</strong> Blog Website - Built a blog website using a backend framework and integrated with a database for storing posts.</p>
         </section>
 
         <section class="skills">
@@ -66,18 +94,65 @@
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
                 <!-- Add more skills as needed -->
             </ul>
         </section>
 
+        <section class="experience">
+            <h2>Experience</h2>
+            <p><strong>Google</strong> - Junior Web Developer (July 2022 - Present)</p>
+            <ul>
+                <li>Contributed to the development of user interfaces for various web applications.</li>
+                <li>Collaborated with senior developers to implement new features and resolve issues.</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>sathyabama University </strong> - Bachelor's in Computer Science (2019 - 2023)</p>
+            <p><b>Relevant Courses:</b></p>
+            <ul>
+                <li>Web Development Fundamentals</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management Systems</li>
+            </ul>
+        </section>
+
+        <section class="professional-projects">
+            <h2>Professional Projects</h2>
+            <p><strong>Project A:</strong> E-commerce Website - Led the development of a fully functional e-commerce site, integrating payment gateways and order processing.</p>
+            <p><strong>Project B:</strong> Client Management System - Developed a CRM system to streamline client interactions, improving communication and project tracking.</p>
+        </section>
+
         <section class="contact">
             <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: linkedin.com/yourprofile</p>
-            <!-- Add more contact information as needed -->
+            <p><b>Email :</b> ushodaya@gmail.com</p>
+            <p><b>LinkedIn :</b> linkedin.com/profile</p>
+            <p><b>GitHub :</b> github.com/ushodaya</p>
+        </section>
+        <section class="hobbies">
+            <h2>Hobbies</h2>
+            <p>In my free time, I enjoy:</p>
+            <ul>
+                <li>Coding personal projects</li>
+                <li>Reading tech blogs</li>
+                <li>Playing video games</li>
+            </ul>
         </section>
     </div>
 
+    <footer>
+        &copy; 2024 Ushodaya's Portfolio
+    </footer>
 </body>
 </html>
+
+
+
+
+
+
 
